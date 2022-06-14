@@ -1,16 +1,14 @@
 import requests
 import json
 
-api_url = "http://192.168.2.156/api/resource/User Table"
+api_url = "http://mithra.com/api/method/mithra.mithra.doctype.phq9_session.api.phqsessionpost"
 
 headers = {"Content-Type": "application/json; charset=utf-8",
             "Accept":"application/json",
-            "Authorization": "token c043b3fae600f17:b7d57f73ccc6f7e"}
+            "Authorization": "token 2559f591d98ea66:9e2cdc0890cc4eb"}
  
 data = {
     "user_name": "deepak66",
-    "password": "deepak6666",
-    "role": "participant"
 }
  
 response = requests.post(api_url, headers=headers, json=data)
